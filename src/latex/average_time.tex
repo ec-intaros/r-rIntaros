@@ -1,0 +1,39 @@
+\inputencoding{latin1}
+\HeaderA{average\_time}{Average of a variable per slices along time}{average.Rul.time}
+\keyword{classes}{average\_time}
+%
+\begin{Description}\relax
+Average of a variable per slices along time
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+average_time(dbin, var, years)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{dbin}] 
+The \code{\LinkA{db-class}{db.Rdash.class}} structure containing the IMR data
+
+\item[\code{var}] 
+Name of the target Variable
+
+\item[\code{years}] 
+Vector containing the years for which statistics must be calculated
+
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+A list with three items:
+\begin{itemize}
+
+\item count: Count of samples per time slice
+\item means: Mean of the variable value per time slice
+\item vars:  Variance of the variable per time slice
+
+\end{itemize}
+
+\end{Value}

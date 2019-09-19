@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Interpolate Target Variable on a 2-D grid</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for interpolate_2D {RIntaros}"><tr><td>interpolate_2D {RIntaros}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Interpolate Target Variable on a 2-D grid
+</h2>
+
+<h3>Description</h3>
+
+<p>Interpolate Target Variable on a 2-D grid
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+interpolate_2D(dbin, var, mesh = 1,
+               vario_lag = 0.5, vario_nlag = 20,
+ 	             moving = TRUE, nmaxi = 40, radius = 3,
+	             nsect = 8, model = NA, struct = c(1, 12),
+	             dirvect = c(0, 45, 90, 135), draw.model = FALSE,
+	             verbose = FALSE, ...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>dbin</code></td>
+<td>
+
+<p>The <code><a href="../../RGeoS/html/db-class.html">db-class</a></code> structure containing the IMR data.
+</p>
+</td></tr>
+<tr valign="top"><td><code>var</code></td>
+<td>
+
+<p>Name of the Target variable
+</p>
+</td></tr>
+<tr valign="top"><td><code>mesh</code></td>
+<td>
+
+<p>Horizontal Mesh of the resulting grid
+</p>
+</td></tr>
+<tr valign="top"><td><code>vario_lag</code></td>
+<td>
+
+<p>Lag of the experimental variogram calculated
+</p>
+</td></tr>
+<tr valign="top"><td><code>vario_nlag</code></td>
+<td>
+
+<p>Number of variogram lags to be calculated
+</p>
+</td></tr>
+<tr valign="top"><td><code>moving</code></td>
+<td>
+
+<p>When TRUE, a Moving Neighborhood is used. Otherwise the Neighborhood is
+Unique.
+</p>
+</td></tr>
+<tr valign="top"><td><code>nmaxi</code></td>
+<td>
+
+<p>Maximum number of samples used per Neighborhood. This parameter is
+used only if the flag 'moving' is set to TRUE.
+</p>
+</td></tr>
+<tr valign="top"><td><code>radius</code></td>
+<td>
+
+<p>Size (in degrees) of the Neighborhood ellipsoid. This parameter is
+used only if the flag 'moving' is set to TRUE.
+</p>
+</td></tr>
+<tr valign="top"><td><code>nsect</code></td>
+<td>
+
+<p>Number of Neighborhood ellipsoid sectors. This parameter is
+used only if the flag 'moving' is set to TRUE.
+</p>
+</td></tr>
+<tr valign="top"><td><code>model</code></td>
+<td>
+
+<p>The <code><a href="../../RGeoS/html/model-class.html">model-class</a></code> used for interpolation. When defined,
+the steps for calculating the Experimental Variogram and fitting the Model
+are not performed.
+</p>
+</td></tr>
+<tr valign="top"><td><code>struct</code></td>
+<td>
+
+<p>Set of basic structures used for fitting the Model
+</p>
+</td></tr>
+<tr valign="top"><td><code>dirvect</code></td>
+<td>
+
+<p>Set of directions where the (horizontal) experimental variograms must be
+calculated. If not defined, an omni-directional is calculated instead.
+</p>
+</td></tr>
+<tr valign="top"><td><code>draw.model</code></td>
+<td>
+
+<p>When TRUE, the experimental variogram and the fitted model are represented
+graphically.
+</p>
+</td></tr>
+<tr valign="top"><td><code>verbose</code></td>
+<td>
+
+<p>Verbose flag
+</p>
+</td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+
+<p>Arguments passed to <code><a href="prepar_model.html">prepar_model</a></code>.
+</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>A new <code><a href="../../RGeoS/html/db-class.html">db-class</a></code> organized as a regular 2-D grid which contains
+the estimation result as well as the variance of the estimation error.
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>RIntaros</em> version 1.3 <a href="00Index.html">Index</a>]</div>
+</body></html>

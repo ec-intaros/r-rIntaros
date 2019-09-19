@@ -1,0 +1,52 @@
+\inputencoding{latin1}
+\HeaderA{apply\_sel}{Apply a Selection on the IMR Db}{apply.Rul.sel}
+\keyword{classes}{apply\_sel}
+%
+\begin{Description}\relax
+Apply a Selection on the IMR Db
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+apply_sel(dbin, depth_lim = NA, long_lim = NA, lat_lim = NA, date_lim = NA,
+          var_lim = NA, var_name = NA, compress = FALSE, verbose = FALSE)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{dbin}] 
+The \code{\LinkA{db-class}{db.Rdash.class}} structure containing the IMR information.
+
+\item[\code{depth\_lim}] 
+A pair of values specifying the limits in depth
+
+\item[\code{long\_lim}] 
+A pair of values specifying the limits in longitude
+
+\item[\code{lat\_lim}] 
+A pair of values specifying the limits in latitude
+
+\item[\code{date\_lim}] 
+A pair of values specifying the limits in time
+
+\item[\code{var\_lim}] 
+A pair of values specifying the limits in variable scale
+
+\item[\code{var\_name}] 
+Name of the Target variable
+
+\item[\code{compress}] 
+When TRUE, the masked samples are suppressed from the resulting Db.
+Otherwiswe, a selection is created.
+
+\item[\code{verbose}] 
+Verbose flag.
+
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+The resulting Db. Depending on whether the 'compress' option has been used or
+not, the masked samples have been removed from the resulting Db or not.
+\end{Value}

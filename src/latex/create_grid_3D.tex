@@ -1,0 +1,47 @@
+\inputencoding{latin1}
+\HeaderA{create\_grid\_3D}{Create a 3-D Grid with a given mesh}{create.Rul.grid.Rul.3D}
+\keyword{classes}{create\_grid\_3D}
+%
+\begin{Description}\relax
+Create a 3-D Grid with a given mesh
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+create_grid_3D(dbin, long_lim = NA, lat_lim = NA, mesh, depth0, ndepth, ddepth)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{dbin}] 
+The \code{\LinkA{db-class}{db.Rdash.class}} structure containing the IMR data. This file
+will be used to calculate the longitude and latitude offsets (if arguments
+'long\_lim' and 'lat\_lim' have not been provided).
+
+\item[\code{long\_lim}] 
+A pair of longitude values giveing the offset along the Longitude axis.
+If not provided, this offset is derived from the IMR data.
+
+\item[\code{lat\_lim}] 
+A pair of latitude values giveing the offset along the Longitude axis.
+If not provided, this offset is derived from the IMR data.
+
+\item[\code{mesh}] 
+Mesh of the grid (same for longitude and latitude).
+
+\item[\code{depth0}] 
+Origin of the grid along Depth
+
+\item[\code{ndepth}] 
+Number of grid mesh along Depth
+
+\item[\code{ddepth}] 
+Value of the grid mesh along Depth
+
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+A \code{\LinkA{db-class}{db.Rdash.class}} organized as a regular 3-D grid.
+\end{Value}

@@ -1,0 +1,63 @@
+\inputencoding{latin1}
+\HeaderA{display\_var}{Display the IMR variable}{display.Rul.var}
+\keyword{classes}{display\_var}
+%
+\begin{Description}\relax
+Display the IMR variable
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+display_var(dbin, var = NA, var_scale = NA, title = NA, flag.mesh = TRUE,
+            mesh = 1, flag.xvalid = FALSE, flag.coast = TRUE,
+	    colors = rg.colors(), filename = NA, ...)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{dbin}] 
+The \code{\LinkA{db-class}{db.Rdash.class}} structure organized as a regular grid.
+
+\item[\code{var}] 
+Name of the Target Variable
+
+\item[\code{var\_scale}] 
+Range of the Color scale
+
+\item[\code{title}] 
+Title attached to the figure
+
+\item[\code{flag.mesh}] 
+When TRUE, the grid mesh is overlaid
+
+\item[\code{mesh}] 
+Mesh of the grid to be overlaid (only if 'flag.mesh'=TRUE)
+
+\item[\code{flag.xvalid}] 
+When TRUE, the target variable represents the standardized cross-validation
+error. A colored symbol is posted representing its absolute value.
+Otherwise, the colored symbol is proportional to its value.
+
+\item[\code{flag.coast}] 
+When TRUE, the coast line is overlaid
+
+\item[\code{colors}] 
+Set of colors used for graphic representation
+
+\item[\code{filename}] 
+Name of the PNG file where the figure is saved. Tis is used only if
+the flag\_file has been defined in the Intaros Environment.
+The resulting file is then stored in the Directory defined in the
+Intaros Environment.
+
+\item[\code{...}] 
+Argument passed to \code{\LinkA{display\_grid\_mesh}{display.Rul.grid.Rul.mesh}} and
+\code{\LinkA{db.plot}{db.plot}}.
+
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+Unused
+\end{Value}

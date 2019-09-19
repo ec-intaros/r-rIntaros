@@ -1,0 +1,60 @@
+\inputencoding{latin1}
+\HeaderA{display\_result}{Display the results of an interpolation}{display.Rul.result}
+\keyword{classes}{display\_result}
+%
+\begin{Description}\relax
+Display the results of an interpolation
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+display_result(dbin = NA, dbg, var = NA, depth, var_scale = NA,
+               flag.estim = TRUE, flag.coast = TRUE,
+	       colors = rg.colors(), filename = NA, ...)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{dbin}] 
+The \code{\LinkA{db-class}{db.Rdash.class}} structure organized containing the IMR
+information.
+
+\item[\code{dbg}] 
+The \code{\LinkA{db-class}{db.Rdash.class}} structure organized as a regular grid which
+contains the estimation results
+
+\item[\code{var}] 
+Name of the Target Variable
+
+\item[\code{depth}] 
+Value of the estimation depth (used for building the title)
+
+\item[\code{var\_scale}] 
+Limits defined for the color scale attached to the Target Variable
+
+\item[\code{flag.estim}] 
+When TRUE, the estimation variable is displayed.
+When FALSE, the standard deviation of the estimation error is displayed.
+
+\item[\code{flag.coast}] 
+When TRUE, the coast line is overlaid
+
+\item[\code{colors}] 
+Set of colors used for graphic representation.
+
+\item[\code{filename}] 
+Name of the PNG file where the figure is saved. Tis is used only if
+the flag\_file has been defined in the Intaros Environment.
+The resulting file is then stored in the Directory defined in the
+Intaros Environment.
+
+\item[\code{...}] 
+Argument passed to \code{\LinkA{db.plot}{db.plot}}.
+
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+Unused
+\end{Value}

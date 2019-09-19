@@ -1,0 +1,38 @@
+\inputencoding{latin1}
+\HeaderA{stats\_grid}{Calculate statistics per grid cell}{stats.Rul.grid}
+\keyword{classes}{stats\_grid}
+%
+\begin{Description}\relax
+Calculate statistics per grid cell
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+stats_grid(dbin, var, fun = "num", mesh = 1, verbose = FALSE)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{dbin}] 
+The \code{\LinkA{db-class}{db.Rdash.class}} structure containing the IMR data.
+
+\item[\code{var}] 
+Name of the Target variable
+
+\item[\code{fun}] 
+List of functions to be calculated. For detais, see \code{\LinkA{blockstat}{blockstat}}.
+
+\item[\code{mesh}] 
+Mesh of the 2-D grid where the statistics must be calculated
+
+\item[\code{verbose}] 
+Verbose flag
+
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+A \code{link\{db.class\}} structure organized as a 2-D grid, which contains
+the resulting statistics.
+\end{Value}

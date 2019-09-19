@@ -1,0 +1,38 @@
+\inputencoding{latin1}
+\HeaderA{imr\_read\_csv}{Read a data file from a CSV file}{imr.Rul.read.Rul.csv}
+\keyword{classes}{imr\_read\_csv}
+%
+\begin{Description}\relax
+Read a data file from a CSV file
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+imr_read_csv(name, na.strings = "NA")
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{name}] 
+Name of the ASCII file (CSV format) containing the IMR information
+
+\item[\code{na.strings}] 
+String used to specify a missing information
+
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+A \code{\LinkA{db-class}{db.Rdash.class}} structure containing the IMR information.
+This file MUST contain the following variables:
+\begin{itemize}
+
+\item Longitude coordinate
+\item Latitude coordinate
+\item Time information
+\item Depth coordinate
+
+\end{itemize}
+
+\end{Value}

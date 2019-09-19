@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Display results of Statistics calculations</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for display_stats {RIntaros}"><tr><td>display_stats {RIntaros}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Display results of Statistics calculations
+</h2>
+
+<h3>Description</h3>
+
+<p>Display results of Statistics calculations
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+display_stats(dbg, var = NA, var_scale = NA, title = NA, flag.mesh = TRUE,
+              mesh = 1, flag.coast = TRUE, colors = rg.colors(),
+	      filename = NA, ...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>dbg</code></td>
+<td>
+
+<p>The <code><a href="../../RGeoS/html/db-class.html">db-class</a></code> structure organized as a regular grid.
+</p>
+</td></tr>
+<tr valign="top"><td><code>var</code></td>
+<td>
+
+<p>Name of the Target Variable
+</p>
+</td></tr>
+<tr valign="top"><td><code>var_scale</code></td>
+<td>
+
+<p>Range of the Color scale
+</p>
+</td></tr>
+<tr valign="top"><td><code>title</code></td>
+<td>
+
+<p>Title attached to the figure
+</p>
+</td></tr>
+<tr valign="top"><td><code>flag.mesh</code></td>
+<td>
+
+<p>When TRUE, the grid mesh is overlaid
+</p>
+</td></tr>
+<tr valign="top"><td><code>mesh</code></td>
+<td>
+
+<p>Mesh of the grid to be overlaid (only if 'flag.mesh'=TRUE)
+</p>
+</td></tr>
+<tr valign="top"><td><code>flag.coast</code></td>
+<td>
+
+<p>When TRUE, the coast line is overlaid
+</p>
+</td></tr>
+<tr valign="top"><td><code>colors</code></td>
+<td>
+
+<p>Set of colors used for graphic representation
+</p>
+</td></tr>
+<tr valign="top"><td><code>filename</code></td>
+<td>
+
+<p>Name of the PNG file where the figure is saved. Tis is used only if
+the flag_file has been defined in the Intaros Environment.
+The resulting file is then stored in the Directory defined in the
+Intaros Environment.
+</p>
+</td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+
+<p>Argument passed to <code><a href="display_grid_mesh.html">display_grid_mesh</a></code> and
+<code><a href="../../RGeoS/html/db.plot.html">db.plot</a></code>.
+</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>Unused
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>RIntaros</em> version 1.3 <a href="00Index.html">Index</a>]</div>
+</body></html>

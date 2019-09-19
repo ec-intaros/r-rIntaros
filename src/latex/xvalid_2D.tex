@@ -1,0 +1,71 @@
+\inputencoding{latin1}
+\HeaderA{xvalid\_2D}{2-D Cross-Validation}{xvalid.Rul.2D}
+\keyword{classes}{xvalid\_2D}
+%
+\begin{Description}\relax
+2-D Cross-Validation
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+xvalid_2D(dbin, var, vario_lag = 0.5, vario_nlag = 20,
+          moving = FALSE, nmaxi = 40, model = NA, struct = c(1, 12),
+	  dirvect = c(0, 45, 90, 135), radix = "Xvalid", draw.model = FALSE,
+	  verbose = FALSE, ...)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{dbin}] 
+The \code{\LinkA{db-class}{db.Rdash.class}} structure containing the IMR data.
+
+\item[\code{var}] 
+Name of the Target variable
+
+\item[\code{vario\_lag}] 
+Lag of the experimental variogram calculated
+
+\item[\code{vario\_nlag}] 
+Number of variogram lags to be calculated
+
+\item[\code{moving}] 
+When TRUE, a Moving Neighborhood is used. Otherwise the Neighborhood is
+Unique.
+
+\item[\code{nmaxi}] 
+Maximum number of samples used per Neighborhood. This parameter is
+used only if the flag 'moving' is set to TRUE.
+
+\item[\code{model}] 
+The \code{\LinkA{model-class}{model.Rdash.class}} used for interpolation. When defined,
+the steps for calculating the Experimental Variogram and fitting the Model
+are not performed.
+
+\item[\code{struct}] 
+Set of basic structures used for fitting the Model
+
+\item[\code{dirvect}] 
+Set of directions where the (horizontal) experimental variograms must be
+calculated. If not defined, an omni-directional is calculated instead.
+
+\item[\code{radix}] 
+Radix attached to the resulting variables
+
+\item[\code{draw.model}] 
+When TRUE, the experimental variogram and the fitted model are represented
+graphically.
+
+\item[\code{verbose}] 
+Verbose flag
+
+\item[\code{...}] 
+Arguments passed to \code{\LinkA{prepar\_model}{prepar.Rul.model}}.
+
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+The \code{\LinkA{db-class}{db.Rdash.class}} which corresponds to the input Db, to which the
+cross-validation results are added.
+\end{Value}

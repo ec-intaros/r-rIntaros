@@ -1,0 +1,40 @@
+\inputencoding{latin1}
+\HeaderA{regular\_time}{Build a 1D regular grid of average along Time}{regular.Rul.time}
+\keyword{classes}{regular\_time}
+%
+\begin{Description}\relax
+Build a 1D regular grid of average along Time
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+regular_time(dbin, var, time_step = NA, depth_lim = NA, date_lim = NA)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{dbin}] 
+The \code{\LinkA{db-class}{db.Rdash.class}} structure organized as a regular grid.
+
+\item[\code{var}] 
+Name of the Target Variable
+
+\item[\code{time\_step}] 
+Time Interval which provides the mesh of the resulting grid
+
+\item[\code{depth\_lim}] 
+A pair of values specifying the limits in depth
+
+\item[\code{date\_lim}] 
+Pair of values which give the range of time values to be covered by
+the resulting grid
+
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+A 1-D regular grid along Time. The value of a variable in a cell is calculated
+as the average of the variable in the input Db for the samples which belong to
+the cell extension along Time.
+\end{Value}

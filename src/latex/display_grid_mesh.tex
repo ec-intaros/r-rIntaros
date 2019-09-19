@@ -1,0 +1,43 @@
+\inputencoding{latin1}
+\HeaderA{display\_grid\_mesh}{Display the Grid cells}{display.Rul.grid.Rul.mesh}
+\keyword{classes}{display\_grid\_mesh}
+%
+\begin{Description}\relax
+Display the Grid cells
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+display_grid_mesh(dbin, long_lim = NA, lat_lim = NA, mesh,
+                  color = "lightgrey", ...)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{dbin}] 
+The \code{\LinkA{db-class}{db.Rdash.class}} structure organized as a regular grid.
+
+\item[\code{long\_lim}] 
+A pair of longitude values giveing the offset along the Longitude axis.
+If not provided, this offset is derived from the IMR data.
+
+\item[\code{lat\_lim}] 
+A pair of latitude values giveing the offset along the Longitude axis.
+If not provided, this offset is derived from the IMR data.
+
+\item[\code{mesh}] 
+Mesh of the grid (same for longitude and latitude).
+
+\item[\code{color}] 
+Color used for representing the grid cells
+
+\item[\code{...}] 
+Argument passed to \code{\LinkA{db.grid.plot}{db.grid.plot}}.
+
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+Unused
+\end{Value}

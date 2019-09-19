@@ -1,0 +1,14 @@
+import(RGeostats)
+import(methods)
+import(maps)
+
+exportPattern("^[^\\.][^0]*$")
+
+exportMethods(
+	"[","[<-","$","$<-",
+	"plot","print"
+)
+
+importFrom("grDevices", "dev.off")
+importFrom("grDevices", "col2rgb", "png")
+importFrom("utils", "read.table")

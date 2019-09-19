@@ -1,0 +1,47 @@
+aggregate_depth         Aggregate Data along Depth
+apply_sel               Apply a Selection on the IMR Db
+average_depth           Average of a variable per slices along Depth
+average_time            Average of a variable per slices along time
+build_title             Construct a string used as a graphic title
+build_title_db_depth    Construct a string encoding depth limits
+build_title_db_time     Construct a string encoding time limits
+create_color_scale_rgba
+                        Create a Color Scale
+create_grid_2D          Create a 2-D Grid with a given mesh
+create_grid_3D          Create a 3-D Grid with a given mesh
+create_limits_date      Create a Date interval within a given Year
+date2time               Convert Date into Time (number of days since
+                        1950)
+date_eom                Returns the last day of a given month
+date_som                Returns the first day of a given month
+display_grid_mesh       Display the Grid cells
+display_result          Display the results of an interpolation
+display_stats           Display results of Statistics calculations
+display_var             Display the IMR variable
+get_db_limits_depth     Returns the range in Depth within IMR Db
+get_db_limits_lat       Returns the range in Latitude within IMR Db
+get_db_limits_long      Returns the range in Latitude within IMR Db
+get_db_limits_time      Returns the range in Time within IMR Db
+get_db_limits_var       Returns the range of Target Variable within IMR
+                        Db
+get_db_limits_year      Returns the range in Year within IMR Db
+imr_load_data           Load data from a set of NetCDF files
+imr_read_csv            Read a data file from a CSV file
+imr_write_csv           Write a IMR Db into a CSV file
+intaros.load.environ    Get the value of a parameter from Intaros
+                        Environment
+intaros.save.environ    Save parameters in Intaros Enviroment
+interpolate_2D          Interpolate Target Variable on a 2-D grid
+interpolate_3D          Interpolate Target Variable on a 3-D grid
+prepar_model            Calculate Experimental Variogram and Fit the
+                        Model
+prepar_vario            Caculate Experimental Variogram
+regular_depth           Build a 1D regular grid of average along Depth
+regular_time            Build a 1D regular grid of average along Time
+remove_sel              Remove the current selection (if any)
+stats_grid              Calculate statistics per grid cell
+time2date               Convert Time (number of days since 1950) into
+                        Date
+write_geotiff           Write a Geotiff file for each variable in the
+                        Db with locator "z"
+xvalid_2D               2-D Cross-Validation

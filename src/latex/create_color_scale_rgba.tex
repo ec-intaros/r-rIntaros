@@ -1,0 +1,39 @@
+\inputencoding{latin1}
+\HeaderA{create\_color\_scale\_rgba}{Create a Color Scale}{create.Rul.color.Rul.scale.Rul.rgba}
+\keyword{classes}{create\_color\_scale\_rgba}
+%
+\begin{Description}\relax
+Create a Color Scale
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+create_color_scale_rgba(res, colors=rg.colors())
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{res}] 
+Array of real values to be translated into arrays of Red, Green, Blue and
+Transparency indices
+
+\item[\code{colors}] 
+Set of colors used for graphic representation
+
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+An array with as many rows as tere are colors in the color scale, and 5 columns:
+\begin{itemize}
+
+\item 1: The interval starting value of the variable
+\item 2: The index of the Red intensity
+\item 3: The index of the Green intensity
+\item 4: The index of the Blue intensity
+\item 5: The index of the Transparency
+
+\end{itemize}
+
+\end{Value}

@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Apply a Selection on the IMR Db</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for apply_sel {RIntaros}"><tr><td>apply_sel {RIntaros}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Apply a Selection on the IMR Db
+</h2>
+
+<h3>Description</h3>
+
+<p>Apply a Selection on the IMR Db
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+apply_sel(dbin, depth_lim = NA, long_lim = NA, lat_lim = NA, date_lim = NA,
+          var_lim = NA, var_name = NA, compress = FALSE, verbose = FALSE)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>dbin</code></td>
+<td>
+
+<p>The <code><a href="../../RGeoS/html/db-class.html">db-class</a></code> structure containing the IMR information.
+</p>
+</td></tr>
+<tr valign="top"><td><code>depth_lim</code></td>
+<td>
+
+<p>A pair of values specifying the limits in depth
+</p>
+</td></tr>
+<tr valign="top"><td><code>long_lim</code></td>
+<td>
+
+<p>A pair of values specifying the limits in longitude
+</p>
+</td></tr>
+<tr valign="top"><td><code>lat_lim</code></td>
+<td>
+
+<p>A pair of values specifying the limits in latitude
+</p>
+</td></tr>
+<tr valign="top"><td><code>date_lim</code></td>
+<td>
+
+<p>A pair of values specifying the limits in time
+</p>
+</td></tr>
+<tr valign="top"><td><code>var_lim</code></td>
+<td>
+
+<p>A pair of values specifying the limits in variable scale
+</p>
+</td></tr>
+<tr valign="top"><td><code>var_name</code></td>
+<td>
+
+<p>Name of the Target variable
+</p>
+</td></tr>
+<tr valign="top"><td><code>compress</code></td>
+<td>
+
+<p>When TRUE, the masked samples are suppressed from the resulting Db.
+Otherwiswe, a selection is created.
+</p>
+</td></tr>
+<tr valign="top"><td><code>verbose</code></td>
+<td>
+
+<p>Verbose flag.
+</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>The resulting Db. Depending on whether the 'compress' option has been used or
+not, the masked samples have been removed from the resulting Db or not.
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>RIntaros</em> version 1.3 <a href="00Index.html">Index</a>]</div>
+</body></html>

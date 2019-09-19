@@ -1,0 +1,37 @@
+\inputencoding{latin1}
+\HeaderA{intaros.load.environ}{Get the value of a parameter from Intaros Environment}{intaros.load.environ}
+\keyword{classes}{intaros.load.environ}
+%
+\begin{Description}\relax
+Get the value of a parameter from Intaros Environment
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+intaros.load.environ(filename = ".Intaros.Environ", verbose = FALSE)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{filename}] 
+Name given to the Intaros Environment
+
+\item[\code{verbose}] 
+Verbose flag
+
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+This function returns a list containing the following items:
+\begin{itemize}
+
+\item Long\_lim: range of longitude of the offset
+\item Lat\_lim: range of latitude of the offset
+\item Flag\_file: flag specifying if the figures are saved on disk
+\item Image\_dir: Name of the directory where the image files are stored (if 'Flag\_file' is TRUE)
+
+\end{itemize}
+
+\end{Value}
