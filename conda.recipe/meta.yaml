@@ -23,7 +23,7 @@ requirements:
 
   run:
     - r-base 3.5
-    - r-rgeostats
+    - r-rgeostats >=11.2.11
     - r-maps
 
 test:
