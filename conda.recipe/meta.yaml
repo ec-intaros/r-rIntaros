@@ -1,4 +1,4 @@
-{% set version = '1.5' %}
+{% set version = '1.6' %}
 
 package:
   name: r-rintaros
@@ -9,11 +9,11 @@ source:
   url:
     - http://cg.ensmp.fr/rgeos/DOWNLOAD/RIntaros_{{ version }}_linux64.tar.gz
 
-  sha256: a195e748b3f92360054e8576976fa60a6e81b9a9ae97558f0fc2c57fda9f7463
+  sha256: fa57f197f96a4dde68551da2f59ca41b2f6c649f70eb8f5d329bc79bada983e6
 
 build:
   # If this is a new build for the same version, increment the build number.
-  number: 2
+  number: 1
   
   script_env:
     - LD_LIBRARY_PATH # [linux]
