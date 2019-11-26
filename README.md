@@ -1,11 +1,11 @@
 # r-rintaros
 
-r-rintaros is an Anaconda package which provides RIntaros.
-RIntaros is an interface between RGeostats and Intaros.
+r-rintaros is an Anaconda package which provides RIntaros package.
+RIntaros is an R package which provides high level geostatistical functions relying on RGeostats package for the INTAROS project context. More information for the RGeostats package are available here: http://cg.ensmp.fr/rgeostats
 
 ## License
 
-* http://rgeostats.free.fr/LICENSE
+* GPL v3
 
 
 ### Quick link
