@@ -40,7 +40,7 @@ LD_LIBRARY_PATH=/opt/glibc-2.14/lib:${LD_LIBRARY_PATH} /opt/anaconda/bin/R -e "l
 
 ### <a name="upgrade">Upgrade
 
-To upgrade this package to newer version of Rgeostats proceed as follows:
+To upgrade this package to newer version of RIntaros proceed as follows:
 
 * Login on a Ellip Workflows VM,
 * Install the required dependencies:
